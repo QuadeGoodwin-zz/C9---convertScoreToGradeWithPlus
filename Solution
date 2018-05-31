@@ -1,0 +1,46 @@
+function convertScoreToGradeWithPlusAndMinus(score) {
+  if (score > 100 || score < 0){
+    return("INVALID SCORE");
+  }
+  if (score == 100 || score == 99 || score == 98) {
+    return('A+');
+  }
+  if (score == 89 || score == 88) {
+    return('B+');
+  }
+  if (score == 79 || score == 78) {
+    return('C+');
+  }
+  if (score == 69 || score == 68) {
+    return('D+');
+  }
+  if (98 > score && score >= 93){
+    return('A');
+  }
+  if (88 > score && score >= 83){
+    return('B');
+  }
+  if (78 > score && score >= 73){
+    return('C');
+  }
+  if (68 > score && score >= 63){
+    return('D');
+  }
+  if (59 >= score && score > 0){
+    return('F');
+  }
+  if (score == 90 || score == 91 || score == 92) {
+    return('A-');
+  }
+  if (score == 80 || score == 81 || score == 82) {
+    return('B-');
+  }
+  if (score == 70 || score == 71 || score == 72) {
+    return('C-');
+  }
+  if (score == 60 || score == 61 || score == 62) {
+    return('D-');
+  }
+}
+var output = convertScoreToGradeWithPlusAndMinus(95);
+console.log(output);
